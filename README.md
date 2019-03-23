@@ -50,6 +50,6 @@ Please [submit an issue][issues] to report bugs or ask questions.
 Please contribute bug fixes or new features with a [pull request][pull] to this
 repository.
 
-[issues]: https://github.com/slowkow/ggrepel/issues
+[issues]: https://github.com/AAlhendi1707/countToFPKM/issues
 [pull]: https://help.github.com/articles/using-pull-requests/
 [ref]: https://github.com/AAlhendi1707/countToFPKM/blob/master/doc/countToFPKM-manual.pdf
