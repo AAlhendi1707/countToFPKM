@@ -2,7 +2,7 @@
 Convert counts to Fragments Per Kilobase of transcript per Million mapped reads (FPKM).
 
 ## Overview
-This package provides an easy to use function to convert the read count matrix into FPKM matrix; following the equation in 
+This package provides an easy to use function to convert the read count matrix into FPKM matrix; following the equation 
 ![enter image description here][1]
  
 
