@@ -16,7 +16,8 @@ This function requires three inputs to return FPKM as numeric matrix normalized 
   
 ## Installation
 ```r
-# install.packages("devtools")
+## Install
+if(!require(devtools)) install.packages("devtools")
 devtools::install_github("AAlhendi1707/countToFPKM")
 ```
 ## Usage
