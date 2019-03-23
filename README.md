@@ -2,11 +2,10 @@
 Convert counts to Fragments Per Kilobase of transcript per Million mapped reads (FPKM).
 
 ## Overview
-This package provides an easy to use function to convert the read count matrix into FPKM matrix; following the equation 
-![enter image description here][1]
+This package provides an easy to use function to convert the read count matrix into FPKM matrix:
+- `countToFPKM()`
  
-
-The `countToFPKM()` function requires three inputs to return FPKM as numeric matrix normalized by library size and feature length:
+This function requires three inputs to return FPKM as numeric matrix normalized by library size and feature length:
 
  - `counts` A numeric matrix of raw feature counts. 
  - `featureLength` A    numeric vector with feature lengths that can be
@@ -16,8 +15,6 @@ The `countToFPKM()` function requires three inputs to return FPKM as numeric mat
    which can be calculate with   
    [Picard](https://broadinstitute.github.io/picard/command-line-overview.html#CollectInsertSizeMetrics)
    using CollectInsertSizeMetrics.
-
-  [1]: https://s0.wp.com/latex.php?latex=%5Ctext%7BFPKM%7D_i%20%3D%20%5Cdfrac%7BX_i%7D%7B%20%5Cleft%28%5Cdfrac%7B%5Cwidetilde%7Bl%7D_i%7D%7B10%5E3%7D%5Cright%29%20%5Cleft%28%20%5Cdfrac%7BN%7D%7B10%5E6%7D%20%5Cright%29%7D%20%3D%20%5Cdfrac%7BX_i%7D%7B%5Cwidetilde%7Bl%7D_i%20N%7D%20%5Ccdot%2010%5E9%20%20&bg=ffffff&fg=000000&s=0
   
 ## Installation
 ```r
