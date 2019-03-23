@@ -10,7 +10,7 @@ This function requires three inputs to return FPKM as numeric matrix normalized 
  - `counts` a numeric matrix of raw feature counts. 
  - `featureLength` a numeric vector with feature lengths that can be obtained using   
    [biomaRt](https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html).
- - `meanFragmentLength` a numeric vector with mean fragment lengths, which can be calculate with   
+ - `meanFragmentLength` a numeric vector with mean fragment lengths, which can be calculated with   
    [Picard](https://broadinstitute.github.io/picard/command-line-overview.html#CollectInsertSizeMetrics)
    using CollectInsertSizeMetrics.
   
