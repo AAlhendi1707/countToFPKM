@@ -8,11 +8,9 @@ This package provides an easy to use function to convert the read count matrix i
 This function requires three inputs to return FPKM as numeric matrix normalized by library size and feature length:
 
  - `counts` A numeric matrix of raw feature counts. 
- - `featureLength` A    numeric vector with feature lengths that can be
-   obtained using   
+ - `featureLength` A    numeric vector with feature lengths that can be obtained using   
    [biomaRt](https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html).
- - `meanFragmentLength` A numeric vector with mean fragment lengths,   
-   which can be calculate with   
+ - `meanFragmentLength` A numeric vector with mean fragment lengths, which can be calculate with   
    [Picard](https://broadinstitute.github.io/picard/command-line-overview.html#CollectInsertSizeMetrics)
    using CollectInsertSizeMetrics.
   
