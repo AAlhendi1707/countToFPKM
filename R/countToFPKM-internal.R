@@ -18,7 +18,7 @@
 #' @return fpkm A numeric matrix normalized by library size and feature length.
 #' 
 
-countToFpkm <- function(counts, featureLength, meanFragmentLength) {
+countToFPKM <- function(counts, featureLength, meanFragmentLength) {
   
   # Ensure valid arguments.
   stopifnot(length(featureLength) == nrow(counts))
