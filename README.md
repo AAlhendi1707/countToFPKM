@@ -38,7 +38,7 @@ samples.metrics <- read.table("RNA-seq.samples.metrics.txt", sep="\t", header=TR
 meanFragmentLength <- samples.metrics$meanFragmentLength
 
 #Return FPKM into a matrix.
-foo <- countToFpkm (counts, featureLength, meanFragmentLength)
+foo <- countToFPKM (counts, featureLength, meanFragmentLength)
 
 ```
 
