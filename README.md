@@ -27,12 +27,12 @@ library(countToFPKM)
 #Import the read count matrix data into R.
 counts <- as.matrix(read.csv("RNA-seq.read.counts.csv"))
 
-#Import feature annotations. The lenth of rows should be as the same as in read count matrix.
+#Import feature annotations. The length of rows should be as the same as in read count matrix.
 # Assign feature lenght into a numeric vector.
 feature.annotations <- read.table("feature.annotations.hg38.txt", sep="\t", header=TRUE)
 featureLength <- feature.annotations$length
 
-#Import sample metrics. The lenth of columns should be as the same as in read count matrix.
+#Import sample metrics. The length of columns should be as the same as in read count matrix.
 # Assign mean fragment length into a numeric vector.
 samples.metrics <- read.table("RNA-seq.samples.metrics.txt", sep="\t", header=TRUE)
 meanFragmentLength <- samples.metrics$meanFragmentLength
