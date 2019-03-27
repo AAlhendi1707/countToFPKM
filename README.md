@@ -20,10 +20,6 @@ This function requires three arguments to return FPKM as numeric matrix normaliz
 if(!require(devtools)) install.packages("devtools")
 devtools::install_github("AAlhendi1707/countToFPKM")
 ```
-## Usage
-```r
-countToFPKM (counts, featureLength, meanFragmentLength)
-```
 
 ## Usage example
 ```r
