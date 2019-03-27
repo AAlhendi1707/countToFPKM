@@ -12,7 +12,7 @@
 #'    arXiv:1104.3889v2 
 #'    
 #'    
-#' @param counts A numeric matrix of raw feature counts i.e. fragments assigned to each gene.
+#' @param counts A numeric matrix of raw feature counts.
 #' @param featureLength A numeric vector with feature lengths.
 #' @param meanFragmentLength A numeric vector with mean fragment lengths.
 #' @return fpkm A numeric matrix normalized by library size and feature length.
