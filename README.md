@@ -28,7 +28,7 @@ library(countToFPKM)
 #Import the read count matrix data into R.
 counts <- as.matrix(read.csv("RNA-seq.read.counts.csv"))
 
-#Import feature annotations. he length of items should be as the same of rows in read count matrix.
+#Import feature annotations. The length of items should be as the same of rows in read count matrix.
 # Assign feature lenght into a numeric vector.
 feature.annotations <- read.table("feature.annotations.hg38.txt", sep="\t", header=TRUE)
 featureLength <- feature.annotations$length
