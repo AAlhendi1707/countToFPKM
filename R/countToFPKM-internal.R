@@ -7,7 +7,7 @@
 #' as in fpkm).
 #' 
 #'    Trapnell,C. et al. (2010) Transcript assembly and quantification by RNA-seq reveals unannotated transcripts and isoform switching during cell differentiation. 
-#'    Nat. Biotechnol., 28, 511–515.
+#'    Nat. Biotechnol., 28, 511-515.
 #'    doi: 10.1038/nbt.1621
 #' 
 #'    Lior Pachter. Models for transcript quantification from RNA-Seq.
@@ -88,7 +88,7 @@ fpkm <- function(counts, featureLength, meanFragmentLength) {
 #' (by default using Pearson correlation - 1 to calcualte the distance measurments between features,
 #' and Spearman correlation -1 for clustering of samples as in fpkmheatmap).
 #' It takes that fpkm numeric matrix from the fpkm() function as input. It then using the var() function 
-#' to identify the list of highly variable features to plot using Heatmap function from “ComplexHeatmap” package.
+#' to identify the list of highly variable features to plot using Heatmap function from "ComplexHeatmap" package.
 #' (by default using log normalisation log10(FPKM+1) is TRUE. 
 #' Note set log to FALSE it returns heatmap of FPKM without log normalisation).
 #' 
