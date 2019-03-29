@@ -47,7 +47,7 @@ fpkm_matrix <- fpkm (counts, featureLength, meanFragmentLength)
 #Plot log10(FPKM+1) heatmap of top 30 highly variable features
 fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
 ```
-<img style="margin:1rem;" width="50%" src="vignettes/figures/Top30.variable.genes.log.fpkm.png" />
+<img style="margin:1rem;" width="50%" src="man/figures/Top30.variable.genes.log.fpkm.png" />
 
 ## Contributing
 Please [submit an issue][issues] to report bugs or ask questions.
