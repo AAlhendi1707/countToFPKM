@@ -1,5 +1,8 @@
 # countToFPKM
-Convert counts to Fragments Per Kilobase of transcript per Million mapped reads (FPKM).
+[![Build Status][bb]][travis]
+
+[bb]: https://travis-ci.org/AAlhendi1707/countToFPKM.svg?branch=master
+[travis]: https://travis-ci.org/AAlhendi1707/countToFPKM
 
 ## Overview
 This package provides an easy to use function to convert the read count matrix into FPKM matrix:
