@@ -1,12 +1,12 @@
 Package: countToFPKM
-Title: Convert counts to Fragments Per Kilobase of transcript per Million (FPKM).
+Title: Convert counts to Fragments Per Kilobase of transcript per Million (FPKM)
 Version: 1.0
 Date: 2019-03-22
 Author: Ahmed Alhendi (Dr.)
 Maintainer: Ahmed Alhendi <asna4@le.ac.uk>
-Depends: R (>= 3.1.0)
+Depends: R (>= 3.1.0), ComplexHeatmap,  circlize, stats
 Suggests: DESeq2, biomaRt
-Description: Convert a numeric matrix of features (rows) and conditions (columns) with raw feature counts of RNA-seq data to fragments per kilobase of transcript per million mapped reads.
+Description: Implements the algorithm described in Trapnell,C. et al. (2010) <doi: 10.1038/nbt.1621>. This function takes a matrix of RNA-seq, read feature counts data a numeric vector with feature lengths which can be retrieved using biomaRt, and A numeric vector with mean fragment lengths, which can be calculated using Picard CollectInsertSizeMetrics. It then validates the lenght of input data and calculates effective lengths of features in each library to use in normlising the expression of each feature by sample library size and feature effective lenght.
 License: GPL-3
 URL: https://github.com/AAlhendi1707/countToFPKM
 BugReports: https://github.com/AAlhendi1707/countToFPKM/issues
