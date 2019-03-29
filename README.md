@@ -45,7 +45,7 @@ meanFragmentLength <- samples.metrics$meanFragmentLength
 fpkm <- fpkm (counts, featureLength, meanFragmentLength)
 
 #Plot FPKM heatmap
-fpkmheatmap(fpkm_matrix, topvar=50, showfeaturenames=TRUE, return_log = TRUE)
+fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
 ```
 <img style="margin:1rem;" width="50%" src="vignettes/figures/Top30.variable.genes.log.fpkm.png" />
 
