@@ -117,7 +117,7 @@ fpkm <- function(counts, featureLength, meanFragmentLength) {
 #' meanFragmentLength <- samples.metrics$meanFragmentLength
 #' 
 #' #Return FPKM into a matrix.
-#' fpkmheatmap(fpkm, topvar=50, showfeaturenames=TRUE, return_log = TRUE)
+#' fpkmheatmap(fpkm, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
 #'
 #' @docType methods
 #' @name fpkmheatmap
