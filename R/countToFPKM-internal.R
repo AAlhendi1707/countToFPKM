@@ -124,7 +124,7 @@ fpkm <- function(counts, featureLength, meanFragmentLength) {
 #' @rdname fpkmheatmap
 #' 
 #' @export
-fpkmheatmap <- function(fpkm_matrix, topvar=50, showfeaturenames=TRUE, return_log = TRUE) {
+fpkmheatmap <- function(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE) {
 
 if (return_log) {
 log10fpkm <- apply((fpkm_matrix+1), 2, log10)
