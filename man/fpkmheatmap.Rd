@@ -7,7 +7,7 @@ A FPKM heatmap plot of the highly variable features in RNA-Seq data set
 }
 
 \usage{
-fpkmheatmap(fpkm_matrix, topvar=50, showfeaturenames=TRUE, return_log = TRUE)
+fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
 }
 
 \arguments{
