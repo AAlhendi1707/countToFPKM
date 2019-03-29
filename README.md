@@ -42,7 +42,7 @@ samples.metrics <- read.table("RNA-seq.samples.metrics.txt", sep="\t", header=TR
 meanFragmentLength <- samples.metrics$meanFragmentLength
 
 #Return FPKM into a matrix.
-fpkm <- fpkm (counts, featureLength, meanFragmentLength)
+fpkm_matrix <- fpkm (counts, featureLength, meanFragmentLength)
 
 #Plot log10(FPKM+1) heatmap of top 30 highly variable features
 fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
