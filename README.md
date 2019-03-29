@@ -3,9 +3,10 @@ Convert counts to Fragments Per Kilobase of transcript per Million mapped reads 
 
 ## Overview
 This package provides an easy to use function to convert the read count matrix into FPKM matrix:
-- `countToFPKM()`
+- `fpkm()`
+- `fpkmheatmap()`
 
-This function requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
+ The `fpkm()` function requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
 
  - `counts` a numeric matrix of raw feature counts. 
  - `featureLength` a numeric vector with feature lengths that can be obtained using   
@@ -13,6 +14,8 @@ This function requires three arguments to return FPKM as numeric matrix normaliz
  - `meanFragmentLength` a numeric vector with mean fragment lengths, which can be calculated with   
    [Picard](https://broadinstitute.github.io/picard/command-line-overview.html#CollectInsertSizeMetrics)
    using CollectInsertSizeMetrics.
+   
+The `fpkmheatmap()` provides the user with a quick and reliable way to generate FPKM heatmap plot of the highly variable features in RNA-Seq dataset. This function returns FPKM heatmap plot, (by default using Pearson correlation - 1 to calcualte the distance measurments between features, and Spearman correlation -1 for clustering of samples). It takes that fpkm numeric matrix from the fpkm() function as input. It then using the var() function to identify the list of highly variable features to plot using Heatmap() function from "ComplexHeatmap" package.
   
 ## Installation
 ```r
@@ -39,11 +42,12 @@ samples.metrics <- read.table("RNA-seq.samples.metrics.txt", sep="\t", header=TR
 meanFragmentLength <- samples.metrics$meanFragmentLength
 
 #Return FPKM into a matrix.
-fpkm <- countToFPKM (counts, featureLength, meanFragmentLength)
+fpkm <- fpkm (counts, featureLength, meanFragmentLength)
 
+#Plot FPKM heatmap
+fpkmheatmap(fpkm_matrix, topvar=50, showfeaturenames=TRUE, return_log = TRUE)
 ```
-## Citation
-See the [doc][ref] for the code and references behind this package.
+
 
 ## Contributing
 Please [submit an issue][issues] to report bugs or ask questions.
