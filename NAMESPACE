@@ -1,1 +1,4 @@
 exportPattern("^[[:alpha:]]+")
+importFrom("stats", "var")
+importFrom("ComplexHeatmap", "Heatmap")
+importFrom("circlize", "colorRamp2")
