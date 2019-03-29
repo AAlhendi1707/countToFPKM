@@ -1,5 +1,5 @@
 Package: countToFPKM
-Title: Convert counts to Fragments Per Kilobase of transcript per Million (FPKM)
+Title: Convert Counts to Fragments per Kilobase of Transcript per Million (FPKM)
 Version: 1.0
 Date: 2019-03-22
 Author: Ahmed Alhendi (Dr.)
