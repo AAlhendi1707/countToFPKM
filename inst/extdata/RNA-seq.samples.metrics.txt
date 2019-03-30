@@ -1,0 +1,8 @@
+Samples	meanFragmentLength
+Sample_1	459.947126
+Sample_2	422.555669
+Sample_3	478.270284
+Sample_4	600.744373
+Sample_5	603.507901
+Sample_6	670.275761
+
