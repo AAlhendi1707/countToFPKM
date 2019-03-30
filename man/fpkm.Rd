@@ -40,3 +40,30 @@ Implements the algorithm described in Trapnell,C. et al. (2010). "Transcript ass
 a numeric vector with feature lengths which can be retrieved using biomaRt, and A numeric vector with mean fragment lengths, which can be calculated using Picard CollectInsertSizeMetrics.
 It then validates the lenght of input data and calculates effective lengths of features in each library to use in normlising the expression of each feature by sample library size and feature effective lenght. Please see the original manuscript for further details.
 }
+\examples{
+library(countToFPKM)
+
+file.readcounts <- system.file("extdata", "RNA-seq.read.counts.csv", package="countToFPKM")
+file.annotations <- system.file("extdata", "Biomart.annotations.hg38.txt", package="countToFPKM")
+file.sample.metrics <- system.file("extdata", "RNA-seq.samples.metrics.txt", package="countToFPKM")
+
+
+# Import the read count matrix data into R.
+counts <- as.matrix(read.csv(file.readcounts))
+
+# Import feature annotations. 
+# Assign feature lenght into a numeric vector.
+gene.annotations <- read.table(file.annotations, sep="\t", header=TRUE)
+featureLength <- gene.annotations$length
+
+# Import sample metrics. 
+# Assign mean fragment length into a numeric vector.
+samples.metrics <- read.table(file.sample.metrics, sep="\t", header=TRUE)
+meanFragmentLength <- samples.metrics$meanFragmentLength
+
+# Return FPKM into a numeric matrix.
+fpkm_matrix <- fpkm (counts, featureLength, meanFragmentLength)
+
+# Plot log10(FPKM+1) heatmap of top 30 highly variable features
+fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
+}
