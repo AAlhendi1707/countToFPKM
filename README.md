@@ -55,9 +55,10 @@ fpkm_matrix <- fpkm (counts, featureLength, meanFragmentLength)
 fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
 ```
 ### Heatmap plots
-Dataset1
+-Exmple dataset1
 <img style="margin:1rem;" width="50%" src="inst/extdata/Test.log.fpkm.png" />
-Dataset2
+
+-Example dataset2
 <img style="margin:1rem;" width="50%" src="inst/extdata/Top30.variable.genes.log.fpkm.png" />
 
 ## Contributing
