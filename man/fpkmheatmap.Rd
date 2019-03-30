@@ -37,3 +37,30 @@ The following function provide the user with a quick and reliable way to generat
 This function returns heatmap of FPKM matrix, (by default using Pearson correlation - 1 to calcualte the distance measurments between features, and Spearman correlation -1 for clustering of samples as in fpkmheatmap).
 It takes that fpkm numeric matrix from the fpkm() function as input. It then using the var() function to identify the list of highly variable features to plot using Heatmap() function from "ComplexHeatmap" package.
 }
+\examples{
+library(countToFPKM)
+
+file.readcounts <- system.file("extdata", "RNA-seq.read.counts.csv", package="countToFPKM")
+file.annotations <- system.file("extdata", "Biomart.annotations.hg38.txt", package="countToFPKM")
+file.sample.metrics <- system.file("extdata", "RNA-seq.samples.metrics.txt", package="countToFPKM")
+
+
+# Import the read count matrix data into R.
+counts <- as.matrix(read.csv(file.readcounts))
+
+# Import feature annotations. 
+# Assign feature lenght into a numeric vector.
+gene.annotations <- read.table(file.annotations, sep="\t", header=TRUE)
+featureLength <- gene.annotations$length
+
+# Import sample metrics. 
+# Assign mean fragment length into a numeric vector.
+samples.metrics <- read.table(file.sample.metrics, sep="\t", header=TRUE)
+meanFragmentLength <- samples.metrics$meanFragmentLength
+
+# Return FPKM into a numeric matrix.
+fpkm_matrix <- fpkm (counts, featureLength, meanFragmentLength)
+
+# Plot log10(FPKM+1) heatmap of top 30 highly variable features
+fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
+}
