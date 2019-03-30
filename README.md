@@ -9,8 +9,8 @@ This package provides an easy to use function to convert the read count matrix i
 - `fpkm()`
 - `fpkmheatmap()`
 
-
- The `fpkm()` function requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
+ The `fpkm()` function requires three arguments to return FPKM as numeric matrix normalized 
+ by library size and feature length:
  - `counts` a numeric matrix of raw feature counts. 
  - `featureLength` a numeric vector with feature lengths that can be obtained using   
    [biomaRt](https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html).
