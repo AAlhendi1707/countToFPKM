@@ -3,7 +3,7 @@
 \alias{fpkmheatmap}
 \title{
 \packageTitle{countToFPKM}
-A FPKM heatmap plot of the highly variable features in RNA-Seq data set
+A FPKM heatmap plot of the highly variable features in RNA-Seq dataset
 }
 
 \usage{
