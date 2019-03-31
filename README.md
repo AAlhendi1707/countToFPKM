@@ -18,7 +18,7 @@ This package provides an easy to use function to convert the read count matrix i
    [Picard](https://broadinstitute.github.io/picard/command-line-overview.html#CollectInsertSizeMetrics)
    using CollectInsertSizeMetrics.
    
-The `fpkmheatmap()` provides the user with a quick and reliable way to generate FPKM heatmap plot of the highly variable features in RNA-Seq dataset. This function returns FPKM heatmap plot, (by default using Pearson correlation - 1 to measure the distance between features, and Spearman correlation -1 for clustering of samples). It takes fpkm numeric matrix which can be obtained using fpkm() function as input. It then using the var() function to identify the list of highly variable features to plot using Heatmap() function from "ComplexHeatmap" package.
+The `fpkmheatmap()` provides the user with a quick and reliable way to generate FPKM heatmap plot of the highly variable features in RNA-Seq dataset. This function returns FPKM heatmap plot, (by default using Pearson correlation - 1 to measure the distance between features, and Spearman correlation -1 for clustering of samples). It takes an fpkm numeric matrix which can be obtained using fpkm() function as input. It then using the var() function to identify the highly variable features to plot using Heatmap() function from "ComplexHeatmap" package.
   
 ## Installation
 ```r
