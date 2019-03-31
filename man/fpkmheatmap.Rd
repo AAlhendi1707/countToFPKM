@@ -33,9 +33,9 @@ Nat. Biotechnol., 28, 511-515. doi: 10.1038/nbt.1621.
 }
 
 \details{
-The following function provide the user with a quick and reliable way to generate heatmap plot of the highly variable features in RNA-Seq data set.
-This function returns heatmap of FPKM matrix, (by default using Pearson correlation - 1 to calcualte the distance measurments between features, and Spearman correlation -1 for clustering of samples as in fpkmheatmap).
-It takes that fpkm numeric matrix from the fpkm() function as input. It then using the var() function to identify the list of highly variable features to plot using Heatmap() function from "ComplexHeatmap" package.
+The fpkmheatmap() function provides the user with a quick and reliable way to generate heatmap plot of the highly variable features in RNA-Seq dataset.
+It returns heatmap of FPKM matrix, (by default using Pearson correlation - 1 to measure the distance between features, and Spearman correlation -1 for clustering of samples).
+It takes an fpkm numeric matrix which can be obtained using fpkm() function as input. It then using the var() function to identify the highly variable features to plot using Heatmap() function from "ComplexHeatmap" package.
 }
 \examples{
 library(countToFPKM)
