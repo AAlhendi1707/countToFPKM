@@ -5,7 +5,7 @@ Date: 2019-03-22
 Author: Ahmed Alhendi (Dr.)
 Maintainer: Ahmed Alhendi <asna4@le.ac.uk>
 Depends: R (>= 3.1.0), ComplexHeatmap,  circlize, stats
-Description: Implements the algorithm described in Trapnell,C. et al. (2010) <doi: 10.1038/nbt.1621>. This function takes a matrix of RNA-seq, read feature counts data a numeric vector with feature lengths which can be retrieved using biomaRt, and A numeric vector with mean fragment lengths, which can be calculated using Picard CollectInsertSizeMetrics. It then validates the lenght of input data and calculates effective lengths of features in each library to use in normlising the expression of each feature by sample library size and feature effective lenght.
+Description: Implements the algorithm described in Trapnell,C. et al. (2010) <doi: 10.1038/nbt.1621>. takes a matrix read counts (RNA-Seq) data, feature lengths which can be retrieved using biomaRt, and the mean fragment lengths, which can be calculated using Picard CollectInsertSizeMetrics. It then return a matrix of FPKM normalised data by library size and feature effective length.
 License: GPL-3
 URL: https://github.com/AAlhendi1707/countToFPKM
 BugReports: https://github.com/AAlhendi1707/countToFPKM/issues
