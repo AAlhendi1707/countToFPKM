@@ -5,7 +5,7 @@ Date: 2019-03-22
 Author: Ahmed Alhendi (Dr.)
 Maintainer: Ahmed Alhendi <asna4@le.ac.uk>
 Depends: R (>= 3.1.0), ComplexHeatmap,  circlize, stats
-Description: Implements the algorithm described in Trapnell,C. et al. (2010) <doi: 10.1038/nbt.1621>. This function takes RNA-Seq read counts matrix, feature lengths which can be retrieved using 'biomaRt' package, and the mean fragment lengths which can be calculated using the 'CollectInsertSizeMetrics(Picard)' tool. It then return a matrix of FPKM normalised data by library size and feature effective length. It also provides the use with a quick and reliable function to generate FPKM heatmap plot of the highly variable features in RNA-Seq dataset.
+Description: Implements the algorithm described in Trapnell,C. et al. (2010) <doi: 10.1038/nbt.1621>. This function takes read counts matrix of RNA-Seq data, feature lengths which can be retrieved using 'biomaRt' package, and the mean fragment lengths which can be calculated using the 'CollectInsertSizeMetrics(Picard)' tool. It then returns a matrix of FPKM normalised data by library size and feature effective length. It also provides the user with a quick and reliable function to generate FPKM heatmap plot of the highly variable features in RNA-Seq dataset.
 License: GPL-3
 URL: https://github.com/AAlhendi1707/countToFPKM
 BugReports: https://github.com/AAlhendi1707/countToFPKM/issues
