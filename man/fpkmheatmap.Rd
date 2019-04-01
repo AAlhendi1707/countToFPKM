@@ -15,16 +15,16 @@ fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
 \item{topvar}{Number of highly variable features to show in heatmap plot.}
 \item{showfeaturenames}{whether to show the name of features in heatmap plot.
 The default value is \code{TRUE}.}
-\item{return_log}{whether to use log10 transformation of fpkm.
+\item{return_log}{whether to use log10 transformation of (fpkm+1).
 The default value is \code{TRUE}.}
 }
 
 \value{
-A FPKM heatmap plot of the highly variable features in RNA-Seq data set.
+A FPKM heatmap plot of the highly variable features in RNA-Seq dataset.
 }
 
 \description{
-fpkmheatmap() function returns a heatmap plot of the highly variable features in RNA-Seq data set.
+fpkmheatmap() function returns a heatmap plot of the highly variable features in RNA-Seq dataset.
 }
 
 \references{
@@ -33,9 +33,7 @@ Nat. Biotechnol., 28, 511-515. doi: 10.1038/nbt.1621.
 }
 
 \details{
-The fpkmheatmap() function provides the user with a quick and reliable way to generate heatmap plot of the highly variable features in RNA-Seq dataset.
-It returns heatmap of FPKM matrix, (by default using Pearson correlation - 1 to measure the distance between features, and Spearman correlation -1 for clustering of samples).
-It takes an fpkm numeric matrix which can be obtained using fpkm() function as input. It then using the var() function to identify the highly variable features to plot using Heatmap() function from "ComplexHeatmap" package.
+The fpkmheatmap() function provides the user with a quick and reliable way to generate FPKM heatmap plot of the highly variable features in RNA-Seq dataset. It takes an FPKM numeric matrix which can be obtained using the fpkm() function as input. By default using Pearson correlation - 1 to measure the distance between features, and Spearman correlation -1 for clustering of samples. By default log10 transformation of (FPKM+1) is applied to make variation similar across orders of magnitude. It then uses the var() function to identify the highly variable features to create the heatmap plot using the Heatmap() function from the 'ComplexHeatmap' package.
 }
 \examples{
 library(countToFPKM)
@@ -49,7 +47,7 @@ file.sample.metrics <- system.file("extdata", "RNA-seq.samples.metrics.txt", pac
 counts <- as.matrix(read.csv(file.readcounts))
 
 # Import feature annotations. 
-# Assign feature lenght into a numeric vector.
+# Assign feature length into a numeric vector.
 gene.annotations <- read.table(file.annotations, sep="\t", header=TRUE)
 featureLength <- gene.annotations$length
 
@@ -64,3 +62,4 @@ fpkm_matrix <- fpkm (counts, featureLength, meanFragmentLength)
 # Plot log10(FPKM+1) heatmap of top 30 highly variable features
 fpkmheatmap(fpkm_matrix, topvar=30, showfeaturenames=TRUE, return_log = TRUE)
 }
+

@@ -12,10 +12,10 @@ fpkm (counts, featureLength, meanFragmentLength)
 
 \arguments{
 \item{counts}{A numeric matrix of raw feature counts}
-\item{featureLength}{A numeric vector with feature lengths which can be obtained using biomaRt.
+\item{featureLength}{A numeric vector with feature lengths which can be obtained using 'biomaRt' package.
 The length of items should be as the same of rows in read count matrix.}
 \item{meanFragmentLength}{A numeric vector with mean fragment lengths, 
-which can be calculated using Picard CollectInsertSizeMetrics.
+which can be calculated using 'CollectInsertSizeMetrics(Picard)' tool.
 The length of items should be as the same of columns in read count matrix.}
 }
 
@@ -36,9 +36,7 @@ arXiv:1104.3889v2.
 }
 
 \details{
-Implements the algorithm described in Trapnell,C. et al. (2010). "Transcript assembly and quantification by RNA-seq reveals unannotated transcripts and isoform switching during cell differentiation". Nat. Biotechnol., 28, 511-515. doi: 10.1038/nbt.1621. This function takes a matrix of RNA-seq, read feature counts data
-a numeric vector with feature lengths which can be retrieved using biomaRt, and A numeric vector with mean fragment lengths, which can be calculated using Picard CollectInsertSizeMetrics.
-It then validates the lenght of input data and calculates effective lengths of features in each library to use in normlising the expression of each feature by sample library size and feature effective lenght. Please see the original manuscript for further details.
+Implements the algorithm described in Trapnell,C. et al. (2010). "Transcript assembly and quantification by RNA-seq reveals unannotated transcripts and isoform switching during cell differentiation". Nat. Biotechnol., 28, 511-515. doi: 10.1038/nbt.1621. This function takes a matrix of read feature counts of RNA-seq, a numeric vector with feature lengths which can be retrieved using the 'biomaRt' package, and a numeric vector with mean fragment length which can be calculated using the 'CollectInsertSizeMetrics(Picard)' tool. It then returns a matrix of FPKM normalised data by library size and feature effective length. Please see the original manuscript for further details.
 }
 \examples{
 library(countToFPKM)
@@ -51,12 +49,12 @@ file.sample.metrics <- system.file("extdata", "RNA-seq.samples.metrics.txt", pac
 # Import the read count matrix data into R.
 counts <- as.matrix(read.csv(file.readcounts))
 
-# Import feature annotations. 
-# Assign feature lenght into a numeric vector.
+# Import feature annotations.
+# Assign feature length into a numeric vector.
 gene.annotations <- read.table(file.annotations, sep="\t", header=TRUE)
 featureLength <- gene.annotations$length
 
-# Import sample metrics. 
+# Import sample metrics.
 # Assign mean fragment length into a numeric vector.
 samples.metrics <- read.table(file.sample.metrics, sep="\t", header=TRUE)
 meanFragmentLength <- samples.metrics$meanFragmentLength
@@ -64,3 +62,4 @@ meanFragmentLength <- samples.metrics$meanFragmentLength
 # Return FPKM into a numeric matrix.
 fpkm_matrix <- fpkm (counts, featureLength, meanFragmentLength)
 }
+
