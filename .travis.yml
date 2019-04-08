@@ -1,2 +1,4 @@
 language: r
-r: bioc-release
+repos:
+  CRAN: https://cloud.r-project.org
+  ropensci: http://packages.ropensci.org
