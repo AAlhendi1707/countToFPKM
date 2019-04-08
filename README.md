@@ -31,7 +31,15 @@ The `fpkmheatmap()` function provides the user with a reliable way to generate F
   
 ## Installation
 ```r
-## Install
+## Install dependances
+install.packages("circlize")
+source("https://bioconductor.org/biocLite.R")
+biocLite("ComplexHeatmap")
+
+## Install countToFPKM from CRAN
+install.packages("countToFPKM")
+
+## Alternatively, install countToFPKM from GitHub
 if(!require(devtools)) install.packages("devtools")
 devtools::install_github("AAlhendi1707/countToFPKM")
 ```
