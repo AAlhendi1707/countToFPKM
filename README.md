@@ -11,19 +11,18 @@
 [r-pkg]: https://www.r-pkg.org/pkg/countToFPKM
 
 ## Overview
-This package provides an easy to use function to convert the read count matrix into FPKM matrix:
+This package provides an easy to use functions:
 - `fpkm()`
 - `fpkmheatmap()`
 
- The `fpkm()` function requires three arguments to return FPKM as numeric matrix normalized 
- by library size and feature length:
+ The `fpkm()` function converts the feature counts matrix into FPKM matrix, and it requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
  - `counts` a numeric matrix of raw feature counts. 
  - `featureLength` a numeric vector with feature lengths that can be obtained using   
    [biomaRt](https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html) package.
  - `meanFragmentLength` a numeric vector with mean fragment lengths, which can be calculated using the   
    [CollectInsertSizeMetrics(Picard)](https://broadinstitute.github.io/picard/command-line-overview.html#CollectInsertSizeMetrics) tool.
    
-The `fpkmheatmap()` function provides the user with a quick and reliable way to generate FPKM heatmap plot of the highly variable features in RNA-Seq dataset. It takes an FPKM numeric matrix which can be obtained using `fpkm()` function as input. By default using Pearson correlation - 1 to measure the distance between features, and Spearman correlation -1 for clustering of samples. By default log10 transformation of (FPKM+1) is applied to make variation similar across orders of magnitude. It then using the var() function to identify the highly variable features to create the heatmap plot using the Heatmap() function from the 'ComplexHeatmap' package.
+The `fpkmheatmap()` function provides the user with a reliable way to generate FPKM heatmap plot of the highly variable features in RNA-Seq dataset. It takes an FPKM numeric matrix which can be obtained using `fpkm()` function as input. By default using Pearson correlation - 1 to measure the distance between features, and Spearman correlation -1 for clustering of samples. By default log10 transformation of (FPKM+1) is applied to make variation similar across orders of magnitude. It then using the var() function to identify the highly variable features to create the heatmap plot using the Heatmap() function from the 'ComplexHeatmap' package.
   
 ## Installation
 ```r
