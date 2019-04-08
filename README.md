@@ -1,8 +1,14 @@
 # countToFPKM
-[![Build Status][bb]][travis]
+[![Build Status][bb]][travis] [![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg]
 
 [bb]: https://travis-ci.org/AAlhendi1707/countToFPKM.svg?branch=master
 [travis]: https://travis-ci.org/AAlhendi1707/countToFPKM
+
+[cb]: http://www.r-pkg.org/badges/version/countToFPKM?color=blue
+[cran]: https://CRAN.R-project.org/package=countToFPKM
+
+[db]: http://cranlogs.r-pkg.org/badges/grand-total/countToFPKM?color=blue
+[r-pkg]: https://www.r-pkg.org/pkg/countToFPKM
 
 ## Overview
 This package provides an easy to use function to convert the read count matrix into FPKM matrix:
