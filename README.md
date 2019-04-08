@@ -1,5 +1,5 @@
 # countToFPKM
-[![Build Status][bb]][travis] [![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg]
+[![Build Status][bb]][travis] [![Rdoc][Rdocb]][Rdoc] [![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg]
 
 [bb]: https://travis-ci.org/AAlhendi1707/countToFPKM.svg?branch=master
 [travis]: https://travis-ci.org/AAlhendi1707/countToFPKM
@@ -9,6 +9,10 @@
 
 [db]: http://cranlogs.r-pkg.org/badges/grand-total/countToFPKM?color=blue
 [r-pkg]: https://www.r-pkg.org/pkg/countToFPKM
+
+[Rdocb]: http://www.rdocumentation.org/badges/version/countToFPKM
+[Rdoc]: http://www.rdocumentation.org/packages/countToFPKM
+
 
 ## Overview
 This package provides an easy to use functions:
