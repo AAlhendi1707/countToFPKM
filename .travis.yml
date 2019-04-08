@@ -1,1 +1,2 @@
 language: r
+r: bioc-release
