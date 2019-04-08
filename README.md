@@ -15,6 +15,7 @@ This package provides an easy to use functions:
 - `fpkm()`
 - `fpkmheatmap()`
 
+
  The `fpkm()` function converts the feature counts matrix into FPKM matrix, and it requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
  - `counts` a numeric matrix of raw feature counts. 
  - `featureLength` a numeric vector with feature lengths that can be obtained using   
