@@ -1,19 +1,2 @@
-language: R
-cache: packages
-sudo: true
-dist: trusty
-
-# build matrix; turn on vdiffr only on r release
-matrix:
-  include:
-  - r: devel
-    # avoind errors due to world clock API (hopefully can be removed in future)
-    env: _R_CHECK_SYSTEM_CLOCK_=false
-  - r: release
-    env: VDIFFR_RUN_TESTS=true
-    before_cache:
-    - Rscript -e 'remotes::install_cran("circlize")'
-    - Rscript -e 'remotes::install_github("jokergoo/ComplexHeatmap")'
-    
-    after_success:
-  - Rscript -e 'covr::codecov()'
+language: r
+r: bioc-devel
