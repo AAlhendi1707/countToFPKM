@@ -1,3 +1,2 @@
 language: r
-before_install: Rscript -e "install.packages('remotes')"
 r: bioc-devel
