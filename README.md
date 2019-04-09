@@ -1,8 +1,6 @@
 # countToFPKM
-[![Build Status][bb]][travis] [![Rdoc][Rdocb]][Rdoc] [![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg]
+[![Rdoc][Rdocb]][Rdoc] [![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg]
 
-[bb]: https://travis-ci.org/AAlhendi1707/countToFPKM.svg?branch=master
-[travis]: https://travis-ci.org/AAlhendi1707/countToFPKM
 
 [cb]: http://www.r-pkg.org/badges/version/countToFPKM?color=blue
 [cran]: https://CRAN.R-project.org/package=countToFPKM
@@ -33,8 +31,10 @@ The `fpkmheatmap()` function provides the user with a reliable way to generate F
 ```r
 ## Install dependances
 install.packages("circlize")
-source("https://bioconductor.org/biocLite.R")
-biocLite("ComplexHeatmap")
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("ComplexHeatmap", version = "3.8")
 
 ## Install countToFPKM from CRAN
 install.packages("countToFPKM")
