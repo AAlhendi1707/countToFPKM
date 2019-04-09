@@ -1,5 +1,5 @@
 # countToFPKM
-[![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg][![Rdoc][Rdocb]][Rdoc] 
+[![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]] [r-pkg][![Rdoc][Rdocb]][Rdoc] 
 
 
 [cb]: http://www.r-pkg.org/badges/version/countToFPKM?color=green
