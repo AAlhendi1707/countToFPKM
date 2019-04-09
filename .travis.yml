@@ -1,4 +1,8 @@
 language: r
-r: bioc-release
-r_github_packages:
-  - hadley/devtools@efa894ffa
+r: bioc-devel
+sudo: true
+cache: packages
+warnings_are_errors: false
+
+bioc_required: true
+bioc_use_devel: true
