@@ -1,4 +1,4 @@
 language: r
-r: bioc-devel
+r: bioc-release
 r_github_packages:
   - hadley/devtools@efa894ffa
