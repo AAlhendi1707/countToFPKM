@@ -1,2 +1,3 @@
 language: r
 r: bioc-devel
+before_install: R -e 'source("https://install-github.me/r-lib/remotes")'
