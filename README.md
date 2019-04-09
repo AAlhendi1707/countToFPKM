@@ -1,6 +1,8 @@
 # countToFPKM
-[![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg] [![Rdoc][Rdocb]][Rdoc] 
+[![Build Status][bb]][travis] [![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg] [![Rdoc][Rdocb]][Rdoc] 
 
+[bb]: https://travis-ci.org/AAlhendi1707/countToFPKM.svg?branch=master
+[travis]: https://travis-ci.org/AAlhendi1707/countToFPKM
 
 [cb]: http://www.r-pkg.org/badges/version/countToFPKM?color=green
 [cran]: https://CRAN.R-project.org/package=countToFPKM
