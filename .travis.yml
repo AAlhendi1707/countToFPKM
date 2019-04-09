@@ -1,7 +1,5 @@
 language: r
 r: bioc-devel
-r_github_packages:
-  - hadley/devtools@efa894ffa
 sudo: true
 cache: packages
 warnings_are_errors: false
