@@ -1,8 +1,8 @@
 # countToFPKM
-[![Rdoc][Rdocb]][Rdoc] [![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg]
+[![CRAN_Status_Badge][cb]][cran] [![CRAN_Downloads_Badge][db]][r-pkg][![Rdoc][Rdocb]][Rdoc] 
 
 
-[cb]: http://www.r-pkg.org/badges/version/countToFPKM?color=blue
+[cb]: http://www.r-pkg.org/badges/version/countToFPKM?color=green
 [cran]: https://CRAN.R-project.org/package=countToFPKM
 
 [db]: http://cranlogs.r-pkg.org/badges/grand-total/countToFPKM?color=blue
