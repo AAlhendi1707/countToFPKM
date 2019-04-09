@@ -1,2 +1,10 @@
-language: r
+language: R
+sudo: false
+cache: packages
+
+r_packages:
+  - covr
+before_install: Rscript -e "install.packages('remotes')"
 r: bioc-devel
+
+after_success: Rscript -e "covr::codecov()"
