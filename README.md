@@ -27,7 +27,7 @@ The 'countToFPKM' package provides a robust function to convert the feature coun
  - `meanFragmentLength` a numeric vector with mean fragment lengths, which can be calculated using the   
    [CollectInsertSizeMetrics(Picard)](https://broadinstitute.github.io/picard/command-line-overview.html#CollectInsertSizeMetrics) tool.
    
-The `fpkmheatmap()` function provides users with a robust method to generate a FPKM heatmap plot of the highly variable features in RNA-Seq dataset. It takes an FPKM numeric matrix which can be obtained using `fpkm()` function as input. By default using Pearson correlation - 1 to measure the distance between features, and Spearman correlation -1 for clustering of samples. By default log10 transformation of (FPKM+1) is applied to make variation similar across orders of magnitude. It uses the var() function to identify the highly variable features. It then uses Heatmap() function from the 'ComplexHeatmap' package to generate a heatmap plot.
+The `fpkmheatmap()` function provides users with a robust method to generate a FPKM heatmap plot of the highly variable features in RNA-Seq dataset.
   
 ## Installation
 ```r
