@@ -15,7 +15,7 @@
 
 
 ## Overview
-The 'countToFPKM' package provides an easy to use function to convert the read count matrix into FPKM matrix. Implements the algorithm described in Trapnell,C. et al. (2010). This package includes two functions:
+The 'countToFPKM' package provides an easy to use function to convert the feature counts of paired-end RNA-Seq into FPKM matrix. Implements the algorithm described in Trapnell,C. et al. (2010). This package includes two functions:
 
 - `fpkm()`
 - `fpkmheatmap()`
