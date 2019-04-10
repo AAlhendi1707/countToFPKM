@@ -15,12 +15,12 @@
 
 
 ## Overview
-The 'countToFPKM' package provides an easy to use function to convert the feature counts of paired-end RNA-Seq into FPKM matrix. Implements the algorithm described in Trapnell,C. et al. (2010). This package includes two functions:
+The 'countToFPKM' package provides an easy to use function to convert the feature counts of paired-end RNA-Seq into FPKM values normalised by library size and feature effective length. Implements the algorithm described in Trapnell,C. et al. (2010). This package includes two functions:
 
 - `fpkm()`
 - `fpkmheatmap()`
 
- The `fpkm()` function converts the feature counts into FPKM, it requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
+ The `fpkm()` function converts the feature counts into FPKM values, it requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
  - `counts` a numeric matrix of raw feature counts. 
  - `featureLength` a numeric vector with feature lengths that can be obtained using   
    [biomaRt](https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html) package.
