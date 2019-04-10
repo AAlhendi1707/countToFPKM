@@ -20,7 +20,7 @@ The 'countToFPKM' package provides an easy to use function to convert the featur
 - `fpkm()`
 - `fpkmheatmap()`
 
- The `fpkm()` function converts the feature counts matrix into FPKM matrix, and it requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
+ The `fpkm()` function converts the feature counts into FPKM, it requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
  - `counts` a numeric matrix of raw feature counts. 
  - `featureLength` a numeric vector with feature lengths that can be obtained using   
    [biomaRt](https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html) package.
