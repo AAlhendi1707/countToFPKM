@@ -4,7 +4,7 @@
 [bb]: https://travis-ci.org/AAlhendi1707/countToFPKM.svg?branch=master
 [travis]: https://travis-ci.org/AAlhendi1707/countToFPKM
 
-[cb]: http://www.r-pkg.org/badges/version/countToFPKM?color=green
+[cb]: http://www.r-pkg.org/badges/version/countToFPKM?color=blue
 [cran]: https://CRAN.R-project.org/package=countToFPKM
 
 [db]: http://cranlogs.r-pkg.org/badges/grand-total/countToFPKM?color=blue
