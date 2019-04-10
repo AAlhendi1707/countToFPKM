@@ -33,10 +33,8 @@ The `fpkmheatmap()` function provides the user with a reliable way to generate F
 ```r
 ## Install dependances
 install.packages("circlize")
-
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install("ComplexHeatmap", version = "3.8")
+source("http://bioconductor.org/biocLite.R")
+biocLite("ComplexHeatmap")
 
 ## Install countToFPKM from CRAN
 install.packages("countToFPKM")
