@@ -32,7 +32,6 @@ The `fpkmheatmap()` function provides the user with a reliable way to generate F
 ## Installation
 ```r
 ## Install dependances
-install.packages("circlize")
 source("http://bioconductor.org/biocLite.R")
 biocLite("ComplexHeatmap")
 
