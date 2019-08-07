@@ -23,7 +23,7 @@ The 'countToFPKM' package provides a robust function to convert the feature coun
  The `fpkm()` function converts the feature counts into FPKM values, it requires three arguments to return FPKM as numeric matrix normalized by library size and feature length:
  - `counts` a numeric matrix of raw feature counts. 
  - `featureLength` a numeric vector with feature lengths that can be obtained using   
-   [biomaRt](https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html) package.
+   [biomaRt](https://github.com/AAlhendi1707/countToFPKM/issues/2) package.
  - `meanFragmentLength` a numeric vector with mean fragment lengths, which can be calculated using the   
    [CollectInsertSizeMetrics(Picard)](https://broadinstitute.github.io/picard/command-line-overview.html#CollectInsertSizeMetrics) tool.
    
