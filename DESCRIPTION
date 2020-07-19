@@ -1,7 +1,7 @@
 Package: countToFPKM
 Title: Convert Counts to Fragments per Kilobase of Transcript per Million (FPKM)
-Version: 1.0
-Date: 2019-03-22
+Version: 1.2.0
+Date: 2020-07-19
 Author: Ahmed Alhendi (Dr.)
 Maintainer: Ahmed Alhendi <asna4@le.ac.uk>
 Depends: R (>= 3.1.0), ComplexHeatmap,  circlize, stats
