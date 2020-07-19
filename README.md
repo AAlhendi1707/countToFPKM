@@ -42,10 +42,10 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 BiocManager::install("ComplexHeatmap")
 
-## Install countToFPKM from CRAN
+## Stable version, install countToFPKM from CRAN
 install.packages("countToFPKM")
 
-## Alternatively, install countToFPKM from GitHub
+## Lastest version, install countToFPKM from GitHub
 if(!require(devtools)) install.packages("devtools")
 devtools::install_github("AAlhendi1707/countToFPKM")
 ```
