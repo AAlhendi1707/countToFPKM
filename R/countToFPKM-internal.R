@@ -78,8 +78,7 @@ fpkm <- function(counts, featureLength, meanFragmentLength) {
     N <- sum(counts_filtered[,i])
     exp( log(counts_filtered[,i]) + log(1e9) - log(effLen[,i]) - log(N) )
   }))
-  
-  
+   
   # Copy the row and column names from the original matrix.
   colnames(fpkm) <- colnames(counts_filtered)
   rownames(fpkm) <- rownames(counts_filtered)
