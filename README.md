@@ -15,7 +15,11 @@
 
 
 ## Overview
-The 'countToFPKM' package provides a robust function to convert the feature counts of paired-end RNA-Seq into FPKM normalised values by library size and feature effective length. Implements the algorithm described in Trapnell,C. et al. (2010). This package includes two functions:
+The 'countToFPKM' package provides a robust function to convert the feature counts of paired-end RNA-Seq into FPKM normalised values by library size and feature effective length. Implements the algorithm described in Trapnell,C. et al. (2010). To cite the R package 'countToFPKM' in publications use: 
+
+"Alhendi, A.S.N. (2019). countToFPKM: Convert Counts to Fragments per Kilobase of Transcript per Million (FPKM). R package version 1.0.0. https://CRAN.R-project.org/package=countToFPKM"
+
+This package includes two functions:
 
 - `fpkm()`
 - `fpkmheatmap()`
@@ -82,10 +86,5 @@ repository.
 [issues]: https://github.com/AAlhendi1707/countToFPKM/issues
 [pull]: https://help.github.com/articles/using-pull-requests/
 [ref]: https://github.com/AAlhendi1707/countToFPKM/blob/master/doc/countToFPKM-manual.pdf
-
-## Citation
-To cite the R package 'countToFPKM' in publications use:
-
-"Alhendi, A.S.N. (2019). countToFPKM: Convert Counts to Fragments per Kilobase of Transcript per Million (FPKM). R package version 1.0.0. https://CRAN.R-project.org/package=countToFPKM"
 
 
