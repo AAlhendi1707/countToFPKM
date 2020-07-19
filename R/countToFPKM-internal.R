@@ -73,7 +73,6 @@ fpkm <- function(counts, featureLength, meanFragmentLength) {
   effLen <- effLen[idx,]
   featureLength <- featureLength[idx]
   
-  
   # Process one column at a time for fpkm calculation
   fpkm <- do.call(cbind, lapply(1:ncol(counts_filtered), function(i) {
     N <- sum(counts_filtered[,i])
