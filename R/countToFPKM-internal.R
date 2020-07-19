@@ -85,8 +85,8 @@ fpkm <- function(counts, featureLength, meanFragmentLength) {
   rownames(fpkm) <- rownames(counts_filtered)
                
   print(paste0("Number of input features in count matrix = ", nrow(counts)))
-  print(paste0("Number of dropped off features due to (featureLength < meanFragmentLength) = ", nrow(counts) - nrow(fpkm_filtered)))
-  print(paste0("Number of returned features in fpkm matrix  = ", nrow(fpkm_filtered)))
+  print(paste0("Number of dropped off features due to (featureLength < meanFragmentLength) = ", nrow(counts) - nrow(fpkm)))
+  print(paste0("Number of returned features in fpkm matrix  = ", nrow(fpkm)))
 
   return(fpkm)
 }
