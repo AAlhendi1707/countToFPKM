@@ -32,8 +32,9 @@ The `fpkmheatmap()` function provides users with a robust method to generate a F
 ## Installation
 ```r
 ## Install dependances
-source("http://bioconductor.org/biocLite.R")
-biocLite("ComplexHeatmap")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("ComplexHeatmap")
 
 ## Install countToFPKM from CRAN
 install.packages("countToFPKM")
@@ -81,3 +82,9 @@ repository.
 [issues]: https://github.com/AAlhendi1707/countToFPKM/issues
 [pull]: https://help.github.com/articles/using-pull-requests/
 [ref]: https://github.com/AAlhendi1707/countToFPKM/blob/master/doc/countToFPKM-manual.pdf
+
+## Citation
+For citation of countToFPKM, please use:
+"Alhendi, A.S.N. (2019). countToFPKM: Convert Counts to Fragments per Kilobase of Transcript per Million (FPKM). R package version 1.0.0, : https://CRAN.R-project.org/package=countToFPKM"
+
+
