@@ -67,6 +67,7 @@ fpkm <- function(counts, featureLength, meanFragmentLength) {
     featureLength - meanFragmentLength[i] + 1
   }))
   
+  # filter features
   idx <- apply(effLen, 1, function(x) min(x) > 1)
   counts_filtered <- counts[idx,]
   effLen <- effLen[idx,]
