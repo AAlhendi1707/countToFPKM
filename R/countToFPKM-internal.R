@@ -68,21 +68,26 @@ fpkm <- function(counts, featureLength, meanFragmentLength) {
   }))
   
   idx <- apply(effLen, 1, function(x) min(x) > 1)
-  counts <- counts[idx,]
+  counts_filtered <- counts[idx,]
   effLen <- effLen[idx,]
   featureLength <- featureLength[idx]
   
   
   # Process one column at a time for fpkm calculation
-  fpkm <- do.call(cbind, lapply(1:ncol(counts), function(i) {
-    N <- sum(counts[,i])
-    exp( log(counts[,i]) + log(1e9) - log(effLen[,i]) - log(N) )
+  fpkm <- do.call(cbind, lapply(1:ncol(counts_filtered), function(i) {
+    N <- sum(counts_filtered[,i])
+    exp( log(counts_filtered[,i]) + log(1e9) - log(effLen[,i]) - log(N) )
   }))
   
   
   # Copy the row and column names from the original matrix.
-  colnames(fpkm) <- colnames(counts)
-  rownames(fpkm) <- rownames(counts)
+  colnames(fpkm) <- colnames(counts_filtered)
+  rownames(fpkm) <- rownames(counts_filtered)
+               
+  print(paste0("Number of input features in count matrix = ", nrow(counts)))
+  print(paste0("Number of dropped off features due to (featureLength < meanFragmentLength) = ", nrow(counts) - nrow(fpkm_filtered)))
+  print(paste0("Number of returned features in fpkm matrix  = ", nrow(fpkm_filtered)))
+
   return(fpkm)
 }
 #' fpkmheatmap
