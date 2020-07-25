@@ -47,7 +47,7 @@ install.packages("countToFPKM")
 
 ## Lastest version, install countToFPKM from GitHub
 if(!require(devtools)) install.packages("devtools")
-devtools::install_github("AAlhendi1707/countToFPKM")
+devtools::install_github("AAlhendi1707/countToFPKM", build_vignettes = TRUE)
 ```
 
 ## Usage example
