@@ -10,9 +10,6 @@
 [db]: http://cranlogs.r-pkg.org/badges/grand-total/countToFPKM?color=blue
 [r-pkg]: https://www.r-pkg.org/pkg/countToFPKM
 
-[Rdocb]: http://www.rdocumentation.org/badges/version/countToFPKM
-[Rdoc]: http://www.rdocumentation.org/packages/countToFPKM
-
 
 ## Overview
 The 'countToFPKM' package provides a robust function to convert the feature counts of paired-end RNA-Seq into FPKM normalised values by library size and feature effective length. Implements the algorithm described in Trapnell,C. et al. (2010).
